@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .sale-banner {
+            width: 1080px;
+            height: 1080px;
+            background: #9b27af; /* A background color close to the one in the image */
+            position: relative;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        .sale-banner h1 {
+            font-size: 100px;
+            margin: 0;
+            position: absolute;
+            top: 333.84px; /* Position from the top */
+            left: 243px; /* Position from the left */
+            width: 485px;
+            height: 176px;
+            transform: rotate(1.54deg); /* Slight rotation */
+            opacity: 1; /* Opacity setting */
+            background-color: #f4b400; /* Background color to match the yellow in the banner */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px; /* Space between letters or elements */
+            color: #e91e63; /* Color for the text */
+        }
+        .sale-banner p {
+            font-size: 50px;
+            margin: 0;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .sale-banner .small-text {
+            font-size: 25px;
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            background: #f4b400;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .sale-banner .url {
+            font-size: 25px;
+            margin: 0;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f4b400;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .sale-banner .image-container {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            width: 250px;
+            height: 250px;
+            background-image: url('https://res.cloudinary.com/da2wpr70r/image/upload/v1723473564/c64a45a183209537dc95266179905ab9_1_fpfy2l.png'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            border: 5px solid #f4b400;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sale-banner">
+        <div class="small-text">3 Days Only</div>
+        <h1>SALE</h1>
+        <p>45% OFF</p>
+        <div class="url">samplewebsite.com</div>
+        <div class="image-container"></div>
+    </div>
+</body>
+</html>
