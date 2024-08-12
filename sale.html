@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Sale Card</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.card-container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 4px solid #FF00FF;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.domain-top,
+.domain-bottom,
+.domain-vertical {
+    position: absolute;
+    background-color: white;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.domain-top {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}
+
+.domain-bottom {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+     opacity: 0.5;
+}
+
+.domain-vertical {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+     opacity: 0.5;
+}
+
+.domain-left {
+    left: 10px;
+     opacity: 0.5;
+}
+
+.domain-right {
+    right: 10px;
+}
+
+.flash-sale {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flash-sale-circle {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.flash-sale-text {
+    font-size: 18px;
+    height: 150px;
+    width: 150px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    
+}
+.flash-sale-percentage {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+    background-color: #000000;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    padding: 12px;
+}
+
+</style>
+</head>
+<body>
+    <div class="card-container">
+        <img src="https://s3-alpha-sig.figma.com/img/aade/d9b8/31675510854668dfbe8dfa854e9098b8?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NknnoLft0uejcGITFlDzYEdrRvt4NK3SorthlaR2uaWDfGPwcxNydkdyRXVUVlUdZJyFXAJ5Pq9lN-rR4NK2Ds5wqridvYXxiOneR~LgijF7OKy3SgdfnuHBFI6Wf8AvNdLMBidJXT72rYahUvdlNsIXsGQO9ErwtETA--iOkc44Ng9bqPr8XpRpcB-k1TY0xiWuYMI0KzxAgV790Shz3kTt7HJIjUlZtZ-T7szbh2N1-bRlmX8oVKVljN~Z9DCFNoq4KsQx3dN1Xao0rqY4dK8qIDV4JPpyvtywVG8qR33jWaKIHsGbhqeBm~wRtS5o~SremtxC32ki-CR47roX~g__" alt="Fashion Models" class="background-image">
+        <div class="domain-top">samplewebsite.com</div>
+        <div class="flash-sale">
+            <div class="flash-sale-circle">
+                <div class="flash-sale-text">FLASH</div>
+                <div class="flash-sale-percentage">99%<br>OFF</div>
+                <div class="flash-sale-text b">SALE</div>
+            </div>
+        </div>
+        <div class="domain-bottom">samplewebsite.com</div>
+        <div class="domain-vertical domain-left">samplewebsite.com</div>
+        <div class="domain-vertical domain-right">samplewebsite.com</div>
+    </div>
+</body>
+</html>
